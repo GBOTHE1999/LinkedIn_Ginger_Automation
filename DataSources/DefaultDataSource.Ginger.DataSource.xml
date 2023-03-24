@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="61a82384-c7b9-4305-b7a4-a159a6883d52" ItemType="GingerLiteDB" CreatedBy="gokulbo" Created="202303221208" GingerVersion="5.1.0.0" Version="1" LastUpdateBy="gokulbo" LastUpdate="202303221208" />
+<GingerLiteDB DSType="LiteDataBase" FilePath="~\DataSources\LiteDB.db" Guid="00000000-0000-0000-0000-000000000000" Name="DefaultDataSource" ParentGuid="00000000-0000-0000-0000-000000000000" /></GingerRepositoryItem>

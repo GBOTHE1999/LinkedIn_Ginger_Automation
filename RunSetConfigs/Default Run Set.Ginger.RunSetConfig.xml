@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GingerRepositoryItem><Header ItemGuid="b17fc897-46ea-44e3-ac3b-43c45d7d4ae6" ItemType="RunSetConfig" CreatedBy="gokulbo" Created="202303230742" GingerVersion="5.1.0.0" Version="13" LastUpdateBy="gokulbo" LastUpdate="202303230949" />
+<RunSetConfig Guid="b17fc897-46ea-44e3-ac3b-43c45d7d4ae6" Name="Default Run Set" ParentGuid="00000000-0000-0000-0000-000000000000" SealightsTestRecommendations="No">
+<CategoriesDefinitions>
+<SolutionCategoryDefinition Category="Product" Guid="709c65cb-a8bf-4cbb-b81c-b4d90f521930" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="TestType" Guid="daafa0d8-ffef-4b20-8cca-3e3d7adc5160" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="Release" Guid="3f32eec3-5dfd-4c60-87d6-fad87773e79e" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="Iteration" Guid="fa7fa315-1cde-4ea4-90e2-4f8ef28988fc" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory1" Guid="639e5b26-3593-4608-b5ec-6cb3ab33c51a" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory2" Guid="1206cd98-23b5-48c6-b503-11bd048fc6ee" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+<SolutionCategoryDefinition Category="UserCategory3" Guid="7212c2de-b905-4443-b78a-623467345d34" ParentGuid="00000000-0000-0000-0000-000000000000" SelectedValueID="00000000-0000-0000-0000-000000000000" />
+</CategoriesDefinitions>
+
+<GingerRunners>
+<GingerRunner Guid="e69b1c38-f645-493b-a0f1-9e2557455b3f" Name="Runner 1" ParentGuid="00000000-0000-0000-0000-000000000000" RunOption="ContinueToRunall">
+<ApplicationAgents>
+<ApplicationAgent AgentID="e98231da-0364-4d49-9a0d-3f8a37ee4bf8" AgentName="MyWebApp - Agent 1" AppID="e761c239-52a1-45c5-82b8-abfcf1a9ed92" AppName="MyWebApp" Guid="d68685a4-42d6-4a05-a15a-85773cd5845c" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</ApplicationAgents>
+
+<BusinessFlowsRunList>
+<BusinessFlowRun BusinessFlowGuid="f30076d2-2a9f-46e3-85d1-5023a868d365" BusinessFlowInstanceGuid="403fe3ff-7b66-4b47-adb0-e6a19cdfd048" BusinessFlowIsActive="True" BusinessFlowName="Flow 1" Guid="fbb601b7-e962-4faf-a9eb-9e1dbd26b241" ParentGuid="00000000-0000-0000-0000-000000000000" />
+</BusinessFlowsRunList>
+</GingerRunner>
+</GingerRunners>
+
+<RunSetActions>
+<RunSetActionHTMLReport Condition="AllBusinessFlowsPassed" Guid="52453272-a02b-47d8-bbf1-dbde805f39d1" HTMLReportFolderName="C:\Ginger Automation\LinkedIn Automation\HTMLReports\Reports" isHTMLReportFolderNameUsed="True" Name="Produce HTML Report" ParentGuid="00000000-0000-0000-0000-000000000000" RunAt="ExecutionEnd" />
+<RunSetActionHTMLReportSendEmail Bodytext="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Your message has been send to user please see the report for more details." Condition="AlwaysRun" Guid="af3dabc6-c472-46f2-b011-e844987ea5f7" HTMLReportTemplate="HTMLReport" MailFrom="Gokul.Bothe@amdocs.com" MailFromDisplayName="_Amdocs Ginger Automation" MailTo="oded.avrilingi@amdocs.com" Name="Send HTML Report Email" ParentGuid="00000000-0000-0000-0000-000000000000" RunAt="ExecutionEnd" Subject="LinkedIn message Delivered GingerReport">
+<Email>
+<Email Body="Full Report Shared Path =&gt;C:\Ginger Automation\LinkedIn Automation\HTMLReports\Reports\Default Run Set_20232823082850270&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Your message has been send to user please see the report for more details." ConfigureCredential="True" EmailMethod="OUTLOOK" EnableSSL="False" Guid="a4e8defd-feee-4b4c-b68b-ed56466281db" MailFrom="gokulbo@amdocs.com" MailFromDisplayName="_Amdocs Ginger Automation" MailTo="gokulbothe39@gmail.com" ParentGuid="00000000-0000-0000-0000-000000000000" SMTPMailHost="umg.amdocs.com" SMTPPort="25" Subject="LinkedIn message GingerReport">
+<Attachments>
+</Attachments>
+</Email>
+</Email>
+
+<EmailAttachments>
+<EmailHtmlReportAttachment AttachmentType="Report" ExtraInformation="C:\Ginger Automation\LinkedIn Automation\HTMLReports\Reports" Guid="14280dc5-bfca-4edc-90f7-1af5e23436c4" IsAlternameFolderUsed="True" IsLinkEnabled="True" ParentGuid="00000000-0000-0000-0000-000000000000" ZipIt="True" />
+</EmailAttachments>
+</RunSetActionHTMLReportSendEmail>
+</RunSetActions>
+
+<SelfHealingConfiguration>
+<SelfHealingConfig EnableSelfHealing="True" Guid="d755a829-06c3-4667-8301-4490708775a6" ParentGuid="00000000-0000-0000-0000-000000000000" ReprioritizePOMLocators="True" />
+</SelfHealingConfiguration>
+</RunSetConfig></GingerRepositoryItem>
